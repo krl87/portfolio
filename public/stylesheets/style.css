@@ -1,2 +1,20 @@
-/*active nav*/
+/*custom styles*/
 
+/*home page*/
+
+.work-list.home {
+    padding: 0;
+}
+
+
+
+/*contact page*/
+
+.container-fluid.contact.thisone {
+    padding-top: 0;
+}
+
+/*footer*/
+.notes-bg {
+    padding-top: 0;
+}
