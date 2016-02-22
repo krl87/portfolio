@@ -3,10 +3,16 @@
         <div class="col-md-12 col-sm-12 col-xs-12 notes-bg">
             <div class="container">
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing.</p>
                 </div>
                 <div class="col-md-offset-1 col-md-2 col-md-offset-1 col-sm-offset-1 col-sm-2 col-sm-offset-1 col-xs-12">
-                    <button type="button" class="btn btn-default btneff">Read More</button>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/profile.php?id=1668570239"> <img
+                                        src="images/facebook.png"></a></li>
+                        <li><a href="https://twitter.com/thekayls"> <img src="images/twitter.png"> </a></li>
+                        <li><a href="instagram.com/thekayls/"> <img src="images/insta.png"> </a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -24,7 +30,7 @@
     function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-            center: new google.maps.LatLng(26.802100, 75.822739),
+            center: new google.maps.LatLng(44.39297, -79.67204),
             zoom: 8,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -56,7 +62,7 @@
         });
     });
 
-    function onScroll(event){
+    function onScroll(event) {
         var scrollPosition = $(document).scrollTop();
         $('nav a').each(function () {
             var currentLink = $(this);
@@ -65,7 +71,7 @@
                 $('nav ul li a').removeClass("active");
                 currentLink.addClass("active");
             }
-            else{
+            else {
                 currentLink.removeClass("active");
             }
         });
@@ -81,7 +87,7 @@
         });
 
         // start all the timers
-        $('#starts').waypoint(function() {
+        $('#starts').waypoint(function () {
             $('.timer').each(count);
         });
 
